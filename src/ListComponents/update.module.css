@@ -1,0 +1,83 @@
+.update {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+#card {
+  border: 2px solid black;
+  width: 80%;
+}
+#card > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#card > div > input {
+  border: none !important;
+  outline: none !important;
+  border-bottom: 1px solid red !important;
+  width: 80%;
+  height: 50px;
+}
+#label2 {
+  margin: 0 20% 10px 20%;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+}
+.btn > a {
+  height: 60px;
+  width: 160px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.updateBtn {
+  background: #2f6220;
+}
+.backBtn {
+  background: #921616;
+}
+
+.err {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: hsla(0, 0%, 39%, 0.2) 0px 2px 8px 0px;
+  background-color: hwb(60 13% 4%);
+  font-weight: 1.25rem;
+  font-weight: 600;
+  animation: slide-in-out 2s ease-in-out forwards;
+  transform: translateX(110%);
+  color: red;
+}
+@keyframes slide-in-out {
+  10% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
