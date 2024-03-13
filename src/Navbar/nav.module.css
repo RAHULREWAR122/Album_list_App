@@ -28,7 +28,7 @@
   animation: slide-in-out 2s ease-in-out forwards;
   transform: translateX(110%);
   color: red;
-  opacity: 15 !important;
+  z-index: 10;
 }
 @keyframes slide-in-out {
   10% {
